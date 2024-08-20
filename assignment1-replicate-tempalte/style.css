@@ -1,0 +1,230 @@
+body {
+    margin: 2%;
+    font-family: Arial, sans-serif;
+    background-image: url("https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.container {
+    outline: rgba(0,0,0,0.7) solid 100px;
+    background-color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 3fr repeat(4, 15fr) 2fr;
+}
+.nav ,.footer {
+
+    background-color: orange;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    /*font-weight: bold;*/
+    padding: 10px;
+}
+.nav >.leftNav{
+    float: left;
+ }
+.nav{
+    align-content: center;
+}
+.nav > .rightNav{
+    float: right;
+}
+.footer{
+    color:white;
+}
+.container > div{
+    /* align-content: center; */
+}
+
+.box{
+    position: relative;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index:1;
+}
+
+.box1{
+    background-image: url('images/image.png');
+}
+.box1>.left{
+    border-radius: 0 250px 250px 0;
+}
+.box1::before{
+    background-color: rgb(146, 232, 244, 0.75);
+}
+.box2{
+    background-image: url('images/london.jpg');
+}
+.box2::before{
+    background-color: rgba(255, 115, 115, 0.5);
+}
+.box3::before{
+    background-color: rgba(128, 128, 128, 0.8);
+}
+.box3{
+    background-image: url('images/box3_bg.jpg');
+}
+.box4{
+    background-image: url("images/div4background.png");
+}
+.box4::before{
+    background-color: rgba(0, 121, 138, 0.8);
+}
+
+.left24,.right24{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    align-content: center;
+}
+.right24{
+    background-color: white;
+    height: 80%;
+    align-self: center;
+    border-radius: 250px 0 0 250px;
+}
+
+.left13,.right13 {
+    width: 100%;
+    z-index: 2;
+    align-content: center;
+}
+.left13 {
+    background-color: white;
+    height: 80%;
+    align-self: center;
+    border-radius: 0 250px 250px 0;
+}
+img{
+    width: 50%;
+    /*height: 80%;*/
+}
+
+.leftNav > button{
+    background-color: #d98d02;
+    margin-left: 20%;
+}
+button:hover{
+        background-color: #d98d02;
+    cursor: pointer;
+
+}
+button{
+    padding: 10px;
+    background: none;
+    border: none;
+    text-align: center;
+    /*background-color:  rgba(219, 138, 31, 0.651);*/
+    /*border: 1px solid rgba(219, 138, 31, 0.651);*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    color:whitesmoke;
+    font-weight: 25;
+}
+
+.heading{
+    font-size: larger;
+    color: brown;
+    text-align: left;
+    /*margin-left: 12%;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 8%;
+}
+
+.subheading{
+    padding: 0 8%;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin-top: 0%;
+    /*margin-left: 12%;*/
+    /*margin-right: 5%;*/
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.content{
+    padding: 0 8%;
+    font-size: small;
+    font-family: sans-serif;
+    text-align: justify;
+    font-weight: lighter;
+    line-height: 18px;
+}
+
+.right24 >.heading,.right24>.subheading,.right24>.content{
+    margin-left: 12%;
+}
+.left13 >.heading,.left13>.subheading,.left13>.content{
+    margin-left: 1%;
+}
+
+
+.right13{
+    justify-self: center;
+}
+.box1 > .right13{
+    width: 80%;
+}
+.formLeft{
+    float: left;
+}
+.fromRight{
+    float: left;
+}
+.box4{
+    position: relative;
+}
+.box4 > .formdiv{
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+    align-content: center;
+}
+.sendMessage{
+    color: white;
+    float: left;
+    text-align: center;
+}
+
+input,textarea{
+    padding: 5px 10px;
+    border: 1px solid white;
+    color: white;
+
+    margin: 10px 20px 0 0;
+    background: none;
+    background-color: rgba(0, 0, 0, 0.47);
+}
+input::placeholder,textarea::placeholder{
+    color: white;
+}
+input[type="submit"]{
+    width: 100%;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+}
+
+.contactUS,.introduction{
+    color: #2ea7ff;
+    font-size: larger;
+}
+.aboutOurCompany{
+    color: #4f4f4f;
+    font-size: larger;
+}

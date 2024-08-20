@@ -1,0 +1,28 @@
+.container {
+    width: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 8px;
+}
+.initial {
+    background-color: #f0f0f0;
+}
+.active {
+    background-color: #4CAF50;
+}
+#toggleButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+.button-initial {
+    background-color: #008CBA;
+    color: white;
+}
+.button-active {
+    background-color: #f44336;
+    color: white;
+}
