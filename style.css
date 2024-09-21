@@ -122,7 +122,7 @@ nav ul li a:hover {
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer; /* Indicate interactivity */
+    cursor: pointer;
 }
 
 .art-item:hover {
@@ -204,11 +204,8 @@ footer {
         padding: 60px 20px;
     }
 
-    .about-us, .poll {
+    .about-us{
         padding: 20px;
     }
 
-    .poll form {
-        max-width: 100%;
-    }
 }

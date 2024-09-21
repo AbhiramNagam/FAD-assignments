@@ -1,4 +1,3 @@
-// JavaScript for dynamic typing effect
 const messages = ["Discover Art", "Explore Creativity", "Unleash Your Imagination"];
 let index = 0;
 let charIndex = 0;
@@ -29,7 +28,6 @@ function type() {
 document.addEventListener("DOMContentLoaded", () => {
     type();
     loadArtGallery();
-    setupPoll();
 });
 
 function loadArtGallery() {
@@ -74,7 +72,6 @@ function loadArtGallery() {
             image: "https://cdn.pixabay.com/photo/2016/11/29/03/59/dark-1867202_1280.jpg",
             title: "Night Sky"
         }
-        // Add more art objects here
     ];
 
     const artGrid = document.getElementById('art-grid');
@@ -86,7 +83,7 @@ function loadArtGallery() {
         const img = document.createElement('img');
         img.src = art.image;
         img.alt = art.title;
-        img.loading = "lazy"; // Enable lazy loading
+        img.loading = "lazy";
 
         const title = document.createElement('p');
         title.textContent = art.title;
@@ -95,10 +92,6 @@ function loadArtGallery() {
         artItem.appendChild(title);
         artGrid.appendChild(artItem);
 
-        // Optional: Add click event to open modal
-        artItem.addEventListener('click', () => {
-            showModal(art.image, art.title);
-        });
     });
 }
 
